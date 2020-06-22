@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+			<Style id="presentClick">
+			<IconStyle>
+				<scale>0</scale>
+				<Icon>
+					<href>https://storage.googleapis.com/geteachkml4/scripts/redpoint.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0</scale>
+			</LabelStyle>
+			<BalloonStyle>
+				<text><![CDATA[
+					<!DOCTYPE html>
+						<html>
+							 <head>					
+							</head>
+						<body>
+							<div id="menuClick" style="display:none;">
+								<a href="#1;balloonFlyto" id="presentStart"></a>					
+							</div>
+							<script>
+								window.onload = function() {
+								  setTimeout(function() {
+									document.getElementById('presentStart').click();
+								  }, 1000);
+								};
+							</script>	
+						</body>
+					</html>
+					]]>
+				</text>
+				<bgColor>ff383226</bgColor>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+			<ListStyle>
+				<ItemIcon>
+					<href>https://storage.googleapis.com/geteachkml4/blueMarble/world.png</href>
+				</ItemIcon>
+			</ListStyle>
+		</Style>	
+		<name>Brazil - Quilombola Google Sheets</name>
+		<NetworkLink id="netLink"> 
+			<name>Google Sheets to Earth</name>
+			<styleUrl>#presentClick</styleUrl>	
+			<Link> 
+				<href><![CDATA[https://docs.google.com/spreadsheets/d/1oTk6hyvgo6I3yoGcU5uPZjcAfG6PIMlhh7-7WmIIZkU/export?format=tsv&gid=1374410249]]></href> 				
+			</Link> 
+		</NetworkLink>
+	</Document> 
+</kml>
